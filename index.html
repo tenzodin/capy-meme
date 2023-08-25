@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Capybara Fan Page</h1>
+    <nav>
+    <ul class="headline">
+        <li>Home</li>
+        <li>About</li>
+        <li>More</li>
+        <li>Contact</li>
+        <li>Glock</li>
+    </ul>
+</nav>
+    <div id="image-container">
+        <img class="center-image" src="./img/ontopofturtle.jpg" alt="Clickable Image">
+        <button id="play-button">Click for +10 capyrizz</button>
+        <audio id="audio-player">
+            <source src="./audio/ballin but extremely low quality.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        const button = document.getElementById('play-button');
+        const audio = document.getElementById('audio-player');
+
+        button.addEventListener('click', () => {
+            audio.play();
+        });
+    </script>
+</body>
+</html>
